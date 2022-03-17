@@ -38,6 +38,7 @@ const CustomTable: FC<TableProps> = (props) => {
                   {keys.map((rowKey: string) => {
                     return (
                       <TableCell
+                        align="center"
                         onClick={() =>
                           onClickRoute &&
                           row[onClickRoute.key] &&
