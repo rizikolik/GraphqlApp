@@ -43,7 +43,7 @@ const SignupForm: FC<SignupFormPropsType> = (props) => {
         referance={passwordRef}
       />
 
-      <div className="form__buttonWrapper">
+      <div className="signupForm__buttonWrapper">
         <Button label="Signup" onClick={() => handleSignup(onSubmit)} />
       </div>
     </form>

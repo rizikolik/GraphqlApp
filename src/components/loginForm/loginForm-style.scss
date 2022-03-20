@@ -1,7 +1,9 @@
 .loginForm {
   display: flex;
   flex-direction: column;
-  padding: 0.8rem;
+  padding: 0.2rem;
+  width: 50%;
+  margin:auto;
   align-items: center;
   justify-content: space-around;
   &__buttonWrapper {
