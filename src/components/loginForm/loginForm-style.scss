@@ -1,5 +1,4 @@
-.searchForm {
-  height: 4rem;
+.loginForm {
   display: flex;
   flex-direction: column;
   padding: 0.8rem;
@@ -7,5 +6,9 @@
   justify-content: space-around;
   &__buttonWrapper {
     width: 50%;
+    margin-top: 0.5rem;
+  }
+  &__label{
+    align-self: flex-start;
   }
 }

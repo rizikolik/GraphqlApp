@@ -8,10 +8,11 @@ export type Bike = {
   android: string;
   ios: string;
 };
-export type ResponseData = {
-  last_updated: 1603386427821;
-  ttl: 0;
-  data: {
-    bikes: Bike[];
-  };
-} | null;
+export type ResponseData = Bike[] | null;
+
+export interface loginResponse {
+  token: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+}

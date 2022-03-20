@@ -9,7 +9,7 @@ interface SearchFormPropsType {
 const SearchForm: FC<SearchFormPropsType> = (props) => {
   const { onSubmit } = props;
   return (
-    <form className="form">
+    <form className="searchForm">
       <Input />
       <div className="form__buttonWrapper">
         <Button onClick={onSubmit} label="Search a Bike" />
