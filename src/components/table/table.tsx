@@ -15,6 +15,7 @@ const CustomTable: FC<TableProps> = (props) => {
 
   const { rows, data, onClickRoute } = props;
 
+  console.log(data)
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 450 }} aria-label="simple table">

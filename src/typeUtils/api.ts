@@ -5,8 +5,6 @@ export type Bike = {
   is_reserved: number;
   is_disabled: number;
   vehicle_type: string;
-  android: string;
-  ios: string;
 };
 export type ResponseData = Bike[] | null;
 
