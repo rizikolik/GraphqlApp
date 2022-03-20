@@ -13,7 +13,7 @@ const SearchForm: FC<SearchFormPropsType> = (props) => {
   return (
     <form className="searchForm">
       <Input referance={referance} />
-      <div className="form__buttonWrapper">
+      <div className="searchForm__buttonWrapper">
         <Button onClick={onSubmit} label="Search a Bike" />
       </div>
     </form>
