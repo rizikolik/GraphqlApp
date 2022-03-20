@@ -18,7 +18,7 @@ const useForm = () => {
   const handleLogin = (cb: onSubmitForms) => {
     const mail = emailRef?.current?.value;
     const pass = passwordRef?.current?.value;
-    customFetch(`${FETCH_URL}/login`, {
+    customFetch(`${FETCH_URL}/api/login`, {
       method: RequestTypes.POST,
       headers: {
         Accept: "application/json",
@@ -32,7 +32,7 @@ const useForm = () => {
     const pass = passwordRef?.current?.value;
     const first = firstNameRef?.current?.value;
     const last = lastNameRef?.current?.value;
-    customFetch(`${FETCH_URL}/signup`, {
+    customFetch(`${FETCH_URL}/api/signup`, {
       method: RequestTypes.POST,
       headers: {
         Accept: "application/json",
