@@ -3,8 +3,6 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
-  useQuery,
-  gql,
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
@@ -19,9 +17,9 @@ function App() {
   const currentToken = localStorage.getItem("tokens");
   const token = currentToken ? JSON.parse(currentToken) : null;
   const [authToken, setAuthToken] = useState(token);
-  const setToken = (token: string) => {
-    localStorage.setItem("tokens", JSON.stringify(token));
-    setAuthToken(token);
+  const setToken = (tokn: string) => {
+    localStorage.setItem("tokens", JSON.stringify(tokn));
+    setAuthToken(tokn);
     window.location.reload();
   };
   const authLink = setContext((_, { headers }) => {

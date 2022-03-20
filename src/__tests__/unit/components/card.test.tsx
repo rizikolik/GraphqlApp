@@ -3,7 +3,11 @@ import Card from "../../../components/card/card";
 
 describe("Button component", () => {
   it("Renders its children", () => {
-    render(<Card children={<div>testing card</div>} />);
+    render(
+      <Card>
+        <div>testing card</div>
+      </Card>
+    );
 
     const divElement = screen.getByText("testing card");
     expect(divElement).toBeInTheDocument();

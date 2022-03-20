@@ -1,5 +1,3 @@
-/* eslint-disable jest/no-conditional-expect */
-/* eslint-disable testing-library/no-node-access */
 import { fireEvent, render } from "@testing-library/react";
 import { ChangeEvent } from "react";
 import Input from "../../../components/input/input";

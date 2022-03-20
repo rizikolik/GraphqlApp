@@ -23,13 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/**'"
   },
   "browserslist": {
     "production": [
@@ -49,6 +44,7 @@
     "@types/node": "^16.7.13",
     "@types/node-sass": "^4.11.2",
     "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "eslint": "^8.11.0"
   }
 }

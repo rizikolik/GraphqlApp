@@ -3,6 +3,7 @@ import Button from "../button/button";
 import Input from "../input/input";
 
 import "./searchForm-style.scss";
+
 interface SearchFormPropsType {
   onSubmit: () => void;
   referance?: RefObject<HTMLInputElement>;

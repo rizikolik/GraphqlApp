@@ -1,4 +1,4 @@
-export type onSubmitForms= (token:string) => void;
+export type onSubmitForms = (token: string) => void;
 
 export type LoginAreas = {
   email: string;

@@ -5,6 +5,7 @@ import Button from "../button/button";
 import Input from "../input/input";
 
 import "./loginForm-style.scss";
+
 interface LoginFormPropsType {
   onSubmit: onSubmitForms;
 }

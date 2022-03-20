@@ -6,16 +6,16 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { TableProps } from "./table.types";
 
 const CustomTable: FC<TableProps> = (props) => {
   const navigate = useNavigate();
-
+  const { bikeId } = useParams();
   const { rows, data, onClickRoute } = props;
 
-  console.log(data)
+  console.log(data);
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 450 }} aria-label="simple table">
@@ -43,6 +43,8 @@ const CustomTable: FC<TableProps> = (props) => {
                         onClick={() =>
                           onClickRoute &&
                           row[onClickRoute.key] &&
+                          !bikeId &&
+                          row &&
                           navigate(
                             `${onClickRoute.link}${row[onClickRoute.key]}`
                           )

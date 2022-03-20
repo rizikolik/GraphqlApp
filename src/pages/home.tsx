@@ -5,7 +5,7 @@ import Spinner from "../components/spinner/spinner";
 import CustomTable from "../components/table/table";
 import useBikeData from "../hooks/useBikeData";
 
-const Home = () => {
+function Home() {
   const { bikes, rows, handleSearch, loading, searchInputRef, error } =
     useBikeData();
   if (loading || error) return <Spinner />;
@@ -23,6 +23,6 @@ const Home = () => {
       </Card>
     </CardContainer>
   );
-};
+}
 
 export default Home;
