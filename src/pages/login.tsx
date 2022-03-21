@@ -18,6 +18,14 @@ const Login: FC<LoginPropsType> = ({ setToken }) => {
       <Card>
         <LoginForm onSubmit={setToken} />
       </Card>
+      <Card>
+        <p>
+          Dont have an account ? Signup{" "}
+          <a href="/signup" style={{ color: "#1967d2" }}>
+            Here
+          </a>
+        </p>
+      </Card>
     </CardContainer>
   );
 };
